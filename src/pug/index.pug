@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Enrico Teotti - Informazioni in Italiano
+        title Enrico Teotti - Lavora con me
 
         link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
 
@@ -35,6 +35,8 @@ html(lang='en')
                     ul.navbar-nav.text-uppercase.ml-auto
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#services') Servizi
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#team') Chi sono                            
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#about') Storia
         // Masthead
@@ -218,9 +220,13 @@ html(lang='en')
         // Third party plugin JS
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
 
-        // Contact form JS
-        script(src='assets/mail/jqBootstrapValidation.js')
-        script(src='assets/mail/contact_me.js')
-
         // Core theme JS
         script(src='js/scripts.js')
+
+        script.
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create', 'G-XKVX4FB7S0');ga('send','pageview');
